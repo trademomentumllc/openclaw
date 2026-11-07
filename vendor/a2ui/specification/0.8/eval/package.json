@@ -12,7 +12,8 @@
     "evalClaude": "pnpm run eval -- --model=claude-4-sonnet --prompt=travelItinerary",
     "start": "genkit start",
     "genkit:dev": "genkit start -- tsx --watch src/dev.ts",
-    "format": "prettier --write src/**/*.ts"
+    "format": "prettier --write src/**/*.ts",
+    "postinstall": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm"
   },
   "keywords": [],
   "author": "",
